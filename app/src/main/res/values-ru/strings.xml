@@ -1,8 +1,9 @@
 <resources>
-    <string name="app_name">Yggdrasil</string>
+    <string name="app_name">ĦVPN</string>
+    <string name="app_title">ĦVPN - Удаленный доступ к ĦMeshnet</string>
     <string name="copied_to_clipboard">Скопировано в буфер</string>
-    <string name="dns_configured_servers_hint">Эти серверы DNS будут использоваться при включении Yggdrasil. Заметьте, что все запросы в DNS, даже о доменах не в Yggdrasil, будут отправляться на эти серверы.</string>
-    <string name="dns_configured_servers_hint_empty">Yggdrasil не будет переопределять серверы DNS при старте. Все запросы DNS будут разрешаться серверами по умолчанию.</string>
+    <string name="dns_configured_servers_hint">Эти серверы DNS будут использоваться при включении ĦVPN. Заметьте, что все запросы в DNS, даже о доменах не в ĦVPN, будут отправляться на эти серверы.</string>
+    <string name="dns_configured_servers_hint_empty">ĦVPN не будет переопределять серверы DNS при старте. Все запросы DNS будут разрешаться серверами по умолчанию.</string>
     <string name="dns_usable_servers_hint">Эти серверы DNS предоставляются членами коммюнити. Нажмите кнопку + чтобы добавить их в список выше. Долгое нажатие чтобы посмотреть информацию.</string>
     <string name="dns_no_configured_servers">Серверы не настроены</string>
     <string name="dns_configured_servers">Настроенные серверы</string>
@@ -30,7 +31,7 @@
     <string name="main_one_peer">1 пир</string>
     <string name="main_many_peers">%d пира/пиров</string>
     <string name="main_add_some_peers_title">Внимание</string>
-    <string name="main_add_some_peers_message">Не настроено ни одного пира. Если не будет обнаруживаемых пиров в этой сети, то вам надо будет добавить пир вручную, чтобы подключение к Yggdrasil работало как положено.</string>
+    <string name="main_add_some_peers_message">Не настроено ни одного пира. Если не будет обнаруживаемых пиров в этой сети, то вам надо будет добавить пир вручную, чтобы подключение к ĦVPN работало как положено.</string>
     <string name="peers_add_peer">Добавить пира в конфиг</string>
     <string name="peers_add">Добавить</string>
     <string name="peers_remove_title">Убрать %s?</string>
@@ -43,7 +44,7 @@
     <string name="settings_config">Конфигурация</string>
     <string name="settings_reset">Сброс</string>
     <string name="main_status">Состояние</string>
-    <string name="main_enable_yggdrasil">Включить Yggdrasil</string>
+    <string name="main_enable_yggdrasil">Включить ĦVPN</string>
     <string name="main_network_info">Адрес и сеть</string>
     <string name="main_not_available">Н/Д</string>
     <string name="main_ip">Адрес</string>
@@ -54,11 +55,11 @@
     <string name="main_settings">Настройки</string>
     <string name="main_version">Версия</string>
     <string name="main_unknown">Не известно</string>
-    <string name="main_bottom_warning">Вы должны перезапустить Yggdrasil после изменения пиров, серверов DNS или настроек, чтобы изменения вступили в силу.</string>
+    <string name="main_bottom_warning">Вы должны перезапустить ĦVPN после изменения пиров, серверов DNS или настроек, чтобы изменения вступили в силу.</string>
     <string name="peer_connectivity_title">Подключения пиров</string>
     <string name="discoverable_over_multicast">Находимый через multicast</string>
     <string name="search_for_multicast_peers">Искать пиров через multicast</string>
-    <string name="configured_peers_hint">Yggdrasil будет пытаться подключаться к этим пирам автоматически. Если вы добавите несколько пиров, ваше устройство может быть использовано для переноса данных между другими узлами сети. Чтобы этого избежать настройте только один пир.</string>
+    <string name="configured_peers_hint">ĦVPN будет пытаться подключаться к этим пирам автоматически. Если вы добавите несколько пиров, ваше устройство может быть использовано для переноса данных между другими узлами сети. Чтобы этого избежать настройте только один пир.</string>
     <string name="peers_discovery_hint">Вы можете найти публичные пиры <a href="https://publicpeers.neilalexander.dev/">по этой ссылке</a>.</string>
     <string name="peer_connectivity_hint">Пиры могут быть найдены с помощью Multicast если они находятся в той же Wi-Fi сети, либо через USB. У них должен быть одинаковый пароль. Трафик в мобильной сети может быть платным. Вы можете отключить мобильные данные в настройках устройства.</string>
     <string name="peers_multicast_password_hint">Пароль</string>
@@ -80,8 +81,8 @@
     <string name="location_buffalo">Буффало, США</string>
     <string name="channel_name">Сервис VPN</string>
     <string name="channel_description">Главный канал нотификаций сервиса</string>
-    <string name="permission_notification_text">Нажмите здесь чтобы включить Yggdrasil.</string>
-    <string name="add_peer_help">Введите полный URI пира для добавления. Yggdrasil будет автоматически подключаться к нему при запуске.</string>
+    <string name="permission_notification_text">Нажмите здесь чтобы включить ĦVPN.</string>
+    <string name="add_peer_help">Введите полный URI пира для добавления. ĦVPN будет автоматически подключаться к нему при запуске.</string>
     <string name="private_key_label">Приватный ключ:</string>
     <string name="set_keys">Установить свой ключ</string>
     <string name="save">Сохранить</string>

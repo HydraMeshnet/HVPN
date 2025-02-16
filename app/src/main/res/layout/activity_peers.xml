@@ -14,38 +14,55 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:dividerPadding="4pt"
             android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
+                android:layout_height="20dp"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@color/primary">
                 <TextView
                     android:id="@+id/pageTitle"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="8pt"
-                    android:text="@string/main_peers"
-                    android:textColor="?attr/textDefault"
-                    android:textSize="24sp"
-                    android:textStyle="bold" />
+                    android:text="@string/app_title"
+                    android:textColor="@android:color/white"
+                    android:textSize="16dp"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+            </LinearLayout>
 
-                <Space
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                app:title=""
+                app:navigationIcon="@drawable/ic_menu"
+                app:navigationContentDescription=""
+                android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
+                android:background="@color/primary">
+
+                <TextView
+                    android:id="@+id/toolbarTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1" />
+                    android:text="@string/main_peers"
+                    android:textColor="@android:color/white"
+                    android:textSize="18dp"
+                    android:layout_gravity="start|center_vertical" />
 
                 <ImageButton
                     android:id="@+id/addPeerButton"
-                    android:layout_width="16pt"
-                    android:layout_height="16pt"
-                    android:layout_marginTop="6pt"
-                    android:layout_marginRight="8pt"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_baseline_add_circle_24"
                     android:background="@android:color/transparent"
-                    app:srcCompat="@drawable/ic_baseline_add_circle_24" />
-            </LinearLayout>
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="15dp" />
+            </com.google.android.material.appbar.MaterialToolbar>
 
             <ScrollView
                 android:layout_width="match_parent"
@@ -155,10 +172,12 @@
                         android:textSize="12sp" />
 
                     <Space
+                        android:visibility="gone"
                         android:layout_width="match_parent"
                         android:layout_height="32px" />
 
                     <TextView
+                        android:visibility="gone"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16pt"
@@ -174,6 +193,7 @@
                         android:textSize="12sp" />
 
                     <TableLayout
+                        android:visibility="gone"
                         android:id="@+id/configurationTableLayout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -268,6 +288,7 @@
                     </TableLayout>
 
                     <TextView
+                        android:visibility="gone"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16pt"

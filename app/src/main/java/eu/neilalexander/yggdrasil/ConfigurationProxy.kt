@@ -17,6 +17,12 @@ object ConfigurationProxy {
             if (file.createNewFile()) {
                 file.writeBytes(conf)
             }
+            updateJSON { json ->
+                json.getJSONArray("Peers").put("tls://[2a03:90c0:85::28a]:443")
+                json.getJSONArray("Peers").put("tls://ygg1.grin.hu:42444")
+                (json.getJSONArray("MulticastInterfaces").get(0) as JSONObject).put("Listen", false)
+                (json.getJSONArray("MulticastInterfaces").get(0) as JSONObject).put("Beacon", false)
+            }
         }
         fix()
         return this
@@ -26,6 +32,12 @@ object ConfigurationProxy {
         val conf = Mobile.generateConfigJSON()
         file.writeBytes(conf)
         fix()
+        updateJSON { json ->
+            json.getJSONArray("Peers").put("tls://[2a03:90c0:85::28a]:443")
+            json.getJSONArray("Peers").put("tls://ygg1.grin.hu:42444")
+            (json.getJSONArray("MulticastInterfaces").get(0) as JSONObject).put("Listen", false)
+            (json.getJSONArray("MulticastInterfaces").get(0) as JSONObject).put("Beacon", false)
+        }
     }
 
     fun resetKeys() {
