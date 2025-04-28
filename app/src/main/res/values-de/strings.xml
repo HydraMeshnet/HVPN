@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">ĦVPN</string>
-    <string name="app_title">ĦVPN - Fernzugang zum ĦMeshnet</string>
+    <string name="app_title">ĦVPN - Tunnel zum ĦMESHNET</string>
     <string name="copied_to_clipboard">In Zwischenablage kopiert</string>
     <string name="dns_configured_servers_hint">Verwenden Sie diese DNS-Server, während ĦVPN ausgeführt wird. Beachten Sie, dass alle DNS-Anfragen, auch für Nicht-ĦVPN-Internet-Hostnamen, an diese Server gesendet werden.</string>
     <string name="dns_configured_servers_hint_empty">ĦVPN wird beim Start des Dienstes keine DNS-Server konfigurieren. Alle DNS-Anfragen werden durch den Standard-Resolver aufgelöst.</string>

@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">ĦVPN</string>
-    <string name="app_title">ĦVPN - Удаленный доступ к ĦMeshnet</string>
+    <string name="app_title">ĦVPN - Туннель к  ĦMESHNET</string>
     <string name="copied_to_clipboard">Скопировано в буфер</string>
     <string name="dns_configured_servers_hint">Эти серверы DNS будут использоваться при включении ĦVPN. Заметьте, что все запросы в DNS, даже о доменах не в ĦVPN, будут отправляться на эти серверы.</string>
     <string name="dns_configured_servers_hint_empty">ĦVPN не будет переопределять серверы DNS при старте. Все запросы DNS будут разрешаться серверами по умолчанию.</string>
