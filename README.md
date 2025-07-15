@@ -1,3 +1,27 @@
+# ĦVPN
+
+Our private IPv6-tunnel through the internet with one-click-activation to protect your connection from ĦWallet and ĦCommunicator to the HydraMeshnet. Its activation is a prerequisite for the use of all other ĦApps.
+
+<img src="docs/screenshots/screen_01.png" width="200px"> <img src="docs/screenshots/screen_02.png" width="200px">
+
+
+## Installation
+
+### Android
+Tested with the following Android versions:
+- Android 7, 8, 9, 10, 11, 12, 13, 14, 15
+
+Tested with the following hardware:
+- Google
+- Samsung
+- Realme C21-Y
+- Ulefone Armor 7
+
+For your Android devices, download the APK and allow the installation.
+
+
+## Source / Based on Yggdrasil
+
 Yggdrasil Android
 -----------------
 
