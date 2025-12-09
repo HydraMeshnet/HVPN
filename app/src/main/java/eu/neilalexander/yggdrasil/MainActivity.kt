@@ -51,7 +51,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        findViewById<TextView>(R.id.versionValue).text = "0.1.0" //Mobile.getVersion()
+        findViewById<TextView>(R.id.versionValue).text = "0.2.0" //Mobile.getVersion()
 
         enabledSwitch = findViewById(R.id.enableYggdrasil)
         enabledLabel = findViewById(R.id.yggdrasilStatusLabel)
