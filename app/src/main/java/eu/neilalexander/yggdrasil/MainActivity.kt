@@ -21,7 +21,7 @@ import eu.neilalexander.yggdrasil.PacketTunnelProvider.Companion.STATE_INTENT
 import mobile.Mobile
 import org.json.JSONArray
 
-const val APP_WEB_URL = "https://github.com/yggdrasil-network/yggdrasil-android"
+const val APP_WEB_URL = "https://hydramesh.net"
 
 class MainActivity : AppCompatActivity() {
     private lateinit var enabledSwitch: Switch
@@ -51,7 +51,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        findViewById<TextView>(R.id.versionValue).text = "0.2.0" //Mobile.getVersion()
+        findViewById<TextView>(R.id.versionValue).text = "0.2.1" //Mobile.getVersion()
 
         enabledSwitch = findViewById(R.id.enableYggdrasil)
         enabledLabel = findViewById(R.id.yggdrasilStatusLabel)

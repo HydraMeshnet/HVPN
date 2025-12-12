@@ -127,6 +127,12 @@ if [ "$DISABLE_ANDROID" == "no" ]; then
     convert "tmp_notify.png" -fuzz 90% -transparent black "notify.png"
     convert "tmp_notify.png" -fuzz 10% -fill black -opaque white -resize 256x256 "notify_black.png"
     convert "notify_black.png" -fuzz 90% -transparent white "notify_black.png"
+
+    convert "notify.png" -resize 48x48 "drawable-mdpi/ic_tile_icon.png"
+    convert "notify.png" -resize 72x72 "drawable-hdpi/ic_tile_icon.png"
+    convert "notify.png" -resize 96x96 "drawable-xhdpi/ic_tile_icon.png"
+    convert "notify.png" -resize 144x144 "drawable-xxhdpi/ic_tile_icon.png"
+    convert "notify.png" -resize 192x192 "drawable-xxxhdpi/ic_tile_icon.png"
   fi
 fi
 

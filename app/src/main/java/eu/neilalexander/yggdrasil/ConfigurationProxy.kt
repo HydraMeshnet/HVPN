@@ -18,8 +18,9 @@ object ConfigurationProxy {
                 file.writeBytes(conf)
             }
             updateJSON { json ->
-                json.getJSONArray("Peers").put("tls://[2a03:90c0:85::28a]:443")
                 json.getJSONArray("Peers").put("tls://ygg1.grin.hu:42444")
+                json.getJSONArray("Peers").put("tls://yggdrasil.deavmi.assigned.network:2001")
+                json.getJSONArray("Peers").put("tls://yg-tyo.magicum.net:32333")
                 (json.getJSONArray("MulticastInterfaces").get(0) as JSONObject).put("Listen", false)
                 (json.getJSONArray("MulticastInterfaces").get(0) as JSONObject).put("Beacon", false)
             }
@@ -33,8 +34,9 @@ object ConfigurationProxy {
         file.writeBytes(conf)
         fix()
         updateJSON { json ->
-            json.getJSONArray("Peers").put("tls://[2a03:90c0:85::28a]:443")
             json.getJSONArray("Peers").put("tls://ygg1.grin.hu:42444")
+            json.getJSONArray("Peers").put("tls://yggdrasil.deavmi.assigned.network:2001")
+            json.getJSONArray("Peers").put("tls://yg-tyo.magicum.net:32333")
             (json.getJSONArray("MulticastInterfaces").get(0) as JSONObject).put("Listen", false)
             (json.getJSONArray("MulticastInterfaces").get(0) as JSONObject).put("Beacon", false)
         }
